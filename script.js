@@ -1,8 +1,13 @@
 let coins = 0;
 let correctAnswer = 0;
+let answered = false;
 
-function startLesson() {
-    let n1 = Math.floor(Math.random() * 10) + 1;
+
+function startLesson() { 
+
+   answered = false;
+    
+   let n1 = Math.floor(Math.random() * 10) + 1;
     let n2 = Math.floor(Math.random() * 10) + 1;
 
     correctAnswer = n1 + n2;
@@ -13,10 +18,16 @@ function startLesson() {
 
 function checkAnswer() {
 
+    if(answered){
+    return;
+}
+    
     let answer = Number(document.getElementById("answer").value);
 
     if (answer === correctAnswer) {
 
+        answered = true;
+        
         coins += 50;
 
         document.getElementById("coins").innerHTML = coins;

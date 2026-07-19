@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Math-Lengends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<h1>🧮 Math-Lengends</h1>
+
+<div class="top">
+    🪙 Moedas: <span id="coins">0</span>
+</div>
+
+
+<div class="map">
+
+    <div class="player">
+        🧙
+    </div>
+
+    <h2>🌎 Mundo Matemático</h2>
+
+    <button onclick="startLesson()">
+        📚 Fazer Lição
+    </button>
+
+    <button onclick="openEgg()">
+        🥚 Abrir Ovo
+    </button>
+
+</div>
+
+
+<div id="lesson" class="box">
+    <h2>Lição</h2>
+
+    <p id="question">
+        Clique em fazer lição!
+    </p>
+
+    <input id="answer" type="number">
+
+    <button onclick="checkAnswer()">
+        Responder
+    </button>
+</div>
+
+
+<div id="egg" class="box">
+    <h2>🥚 Ovo</h2>
+
+    <div id="eggAnimation">
+        🥚
+    </div>
+
+    <p id="pet">
+        
+    </p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
